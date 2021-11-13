@@ -1,5 +1,5 @@
 module.exports.cesar = (str, action) => {
-  action = +action[1];
+  action = +action;
   const alphUpper = [...Array(26)].reduce(
     (a) => a + String.fromCharCode(i++),
     "",

@@ -5,6 +5,10 @@ const grab = (flag) => {
     return process.argv[indexAfterFlag];
   };
 
+const getFilePath = (flag) => {
+  return './' + grab(flag);
+}
+
   const getInput = (value) => {
     return value
       ? fs.readFileSync(value, "utf-8", (err, data) => {
@@ -17,5 +21,5 @@ const grab = (flag) => {
       : process.stdin;
   };
 
-  module.exports.utils = { grab, getInput }
+  module.exports.utils = { grab, getInput, getFilePath }
   

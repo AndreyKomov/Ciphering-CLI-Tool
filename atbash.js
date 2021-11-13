@@ -1,4 +1,4 @@
-export function atbash(str) {
+module.exports.atbash = (str) => {
     const numberOfLetters = 26;
     const lastLetterIndex = 51;
     const alphUpper = [...Array(numberOfLetters)].reduce(a=>a+String.fromCharCode(i++),'',i=65);
