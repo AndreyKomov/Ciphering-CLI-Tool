@@ -1,0 +1,23 @@
+{
+  "name": "ciphering-cli-tool",
+  "version": "1.0.0",
+  "description": "my CLI tool for ciphering",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyKomov/Ciphering-CLI-Tool.git"
+  },
+  "keywords": [
+    "nodeJS",
+    "CLI"
+  ],
+  "author": "Andrei Komau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreyKomov/Ciphering-CLI-Tool/issues"
+  },
+  "homepage": "https://github.com/AndreyKomov/Ciphering-CLI-Tool#readme"
+}
