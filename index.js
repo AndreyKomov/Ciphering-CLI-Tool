@@ -4,8 +4,8 @@ const { utils } = require("./utils");
 const fs = require("fs");
 const { cipherStreamsChain } = require("./streams.js");
 
-const inputPath = utils.getFilePath('-i');
-const outputPath = utils.getFilePath('-o');
+const inputPath = utils.getFilePath("-i");
+const outputPath = utils.getFilePath("-o");
 
 if (process.argv.includes("-c")) {
   pipeline(
@@ -19,6 +19,5 @@ if (process.argv.includes("-c")) {
     }
   );
 } else {
-    console.log(new Error('Wrong ciphering config. Please check flag value.'));
-    process.exit(1);
+  utils.snowError("Wrong ciphering config. Please check flag value.");
 }

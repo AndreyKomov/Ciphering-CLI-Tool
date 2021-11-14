@@ -21,5 +21,10 @@ const getFilePath = (flag) => {
       : process.stdin;
   };
 
-  module.exports.utils = { grab, getInput, getFilePath }
+  const snowError = (value) => {
+    process.stderr.write(value + '\n');
+    process.exit(1);
+  }
+
+  module.exports.utils = { grab, getInput, getFilePath, snowError }
   
