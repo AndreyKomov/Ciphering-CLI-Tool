@@ -26,5 +26,17 @@ const getFilePath = (flag) => {
     process.exit(1);
   }
 
-  module.exports.utils = { grab, getInput, getFilePath, snowError }
+  const isConfigDoubling = () => {
+    let result = [];
+    process.argv.forEach((el) => {
+      if (el === '-c') {
+        result.push('double');
+      }
+    });
+    if (result.length >= 2) {
+      return true;
+    }
+  }
+
+  module.exports.utils = { grab, getInput, getFilePath, snowError, isConfigDoubling }
   
