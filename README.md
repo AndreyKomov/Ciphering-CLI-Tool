@@ -2,8 +2,8 @@
 
 ## How to start:
 ```javascript
-git clone
-cd
+git clone git@github.com:AndreyKomov/Ciphering-CLI-Tool.git
+cd Ciphering-CLI-Tool
 npm install
 ```
 ### Flags
