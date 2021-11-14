@@ -4,8 +4,20 @@ const { utils } = require("./utils");
 const fs = require("fs");
 const { cipherStreamsChain } = require("./streams.js");
 
+if (!process.argv.includes("-i") || !process.argv.includes("-o")) {
+    utils.snowError("Wrong input/output config. Please check flags value.");
+}
+
 const inputPath = utils.getFilePath("-i");
 const outputPath = utils.getFilePath("-o");
+
+if (!inputPath) {
+    inputPath = process.stdin;
+}
+
+if (!outputPath) {
+    outputPath = stdout;
+}
 
 if (process.argv.includes("-c")) {
   pipeline(
