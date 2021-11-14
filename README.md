@@ -9,7 +9,13 @@ npm install
 ### Flags
 1. **-c [string with "-" separator]** : Type chiphering type and action (cipher/uncipher);
 2. **-i [string]** : Type input file path;
-3. **-o [string]** : Type output file path; 
+3. **-o [string]** : Type output file path;
+
+### Config options:
+There are three options and two actions type.
+1. **C** - option for ceasar cipher using. It has two actions: **1** for ciphering and **0** for unciphering.
+2. **A** - option for atbash cipher using. It has no action types.
+3. **R** - option for rot-8 cipher using. It has two actions: **1** for ciphering and **0** for unciphering.
 
 ### Usage Examples:
 ```bash
