@@ -10,7 +10,7 @@ module.exports.rot = (str, action) => {
         strArray.forEach((letter) => {
             let letterIndex = alphabetArray.indexOf(letter);
             if (alphabetArray.includes(letter)) {
-/*                 switch(letterIndex) {
+/*                 switch(true) {
                     case (17 < letterIndex && letterIndex < 26):
                         result.push(alphabetArray[(alphabetArray.indexOf(letter) + 7) - 25]);
                         break;

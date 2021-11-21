@@ -19,3 +19,7 @@ test('should return correct values from end of alphabet', () => {
     expect(cesar.cesar('A', 0)).toBe('Z');
     expect(cesar.cesar('a', 0)).toBe('z');
 });
+
+test('should return non latin letter symbol after decoding', () => {
+    expect(cesar.cesar('!абвгд@ %90', 0)).toBe('!абвгд@ %90');
+});

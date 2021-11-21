@@ -13,3 +13,7 @@ test('should return non latin letter symbol without changing', () => {
     expect(rot.rot('!абвгд @()()90%', 0)).toBe('!абвгд @()()90%');
 });
 
+test('should return non latin letter symbol without changing after ciphering', () => {
+    expect(rot.rot('!абвгд @()()90%', 1)).toBe('!абвгд @()()90%');
+});
+

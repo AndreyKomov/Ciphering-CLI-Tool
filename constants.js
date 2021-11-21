@@ -9,8 +9,8 @@ const PATHES = {
     outputFilePath: '.output.txt',
 }
 
-function testing() {
+/* function testing() {
     console.log('all is ok');
-}
+} */
 
-module.exports.constants = { FLAGS, PATHES, testing }
+module.exports.constants = { FLAGS, PATHES, /* testing */ }

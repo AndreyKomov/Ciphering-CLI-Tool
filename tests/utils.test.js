@@ -20,3 +20,13 @@ test('should return error message text', () => {
     expect(mockStderr).toHaveBeenCalledWith('Error message!\n');
     expect(mockExit.write).toHaveBeenCalled;
 });
+
+test('should check if the argument is replicated', () => {
+    process.argv = ['-c', 'C1-C0-R0-A', '-i', '-o','-c'];
+    expect(utils.utils.isConfigDoubling()).toBeTruthy;
+});
+
+test('should check if the argument is not replicated', () => {
+    process.argv = ['-c', 'C1-C0-R0-A', '-i', '-o'];
+    expect(utils.utils.isConfigDoubling()).toBeFalsy;
+});
