@@ -19,11 +19,11 @@ module.exports.cesar = (str, action) => {
       if (alphabetArray.includes(letter)) {
         if (letter === "z") {
           result.push("a");
-        }
-        if (letter === "Z") {
+        } else if (letter === "Z") {
           result.push("A");
+        } else {
+          result.push(alphabetArray[alphabetArray.indexOf(letter) + 1]);
         }
-        result.push(alphabetArray[alphabetArray.indexOf(letter) + 1]);
       } else {
         result.push(letter);
       }
@@ -35,11 +35,11 @@ module.exports.cesar = (str, action) => {
       if (alphabetArray.includes(letter)) {
         if (letter === "a") {
           result.push("z");
-        }
-        if (letter === "A") {
+        } else if (letter === "A") {
           result.push("Z");
+        } else {
+          result.push(alphabetArray[alphabetArray.indexOf(letter) - 1]);
         }
-        result.push(alphabetArray[alphabetArray.indexOf(letter) - 1]);
       } else {
         result.push(letter);
       }

@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">82.14% </span>
+                <span class="strong">96.42% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>23/28</span>
+                <span class='fraction'>27/28</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">68.75% </span>
+                <span class="strong">93.75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>11/16</span>
+                <span class='fraction'>15/16</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">82.14% </span>
+                <span class="strong">96.42% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>23/28</span>
+                <span class='fraction'>27/28</span>
             </div>
         
             
@@ -108,54 +108,54 @@
 <a name='L49'></a><a href='#L49'>49</a>
 <a name='L50'></a><a href='#L50'>50</a>
 <a name='L51'></a><a href='#L51'>51</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">78x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">182x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">78x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">182x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">module.exports.cesar = (str, action) =&gt; {
   action = +action;
@@ -176,13 +176,13 @@
   if (action === 1) {
     strArray.map((letter) =&gt; {
       if (alphabetArray.includes(letter)) {
-        <span class="missing-if-branch" title="if path not taken" >I</span>if (letter === "z") {
-<span class="cstat-no" title="statement not covered" >          result.push("a");</span>
+        if (letter === "z") {
+          result.push("a");
+        } else if (letter === "Z") {
+          result.push("A");
+        } else {
+          result.push(alphabetArray[alphabetArray.indexOf(letter) + 1]);
         }
-        <span class="missing-if-branch" title="if path not taken" >I</span>if (letter === "Z") {
-<span class="cstat-no" title="statement not covered" >          result.push("A");</span>
-        }
-        result.push(alphabetArray[alphabetArray.indexOf(letter) + 1]);
       } else {
         result.push(letter);
       }
@@ -192,13 +192,13 @@
   if (action === 0) {
     strArray.map((letter) =&gt; {
       if (alphabetArray.includes(letter)) {
-        <span class="missing-if-branch" title="if path not taken" >I</span>if (letter === "a") {
-<span class="cstat-no" title="statement not covered" >          result.push("z");</span>
+        if (letter === "a") {
+          result.push("z");
+        } else if (letter === "A") {
+          result.push("Z");
+        } else {
+          result.push(alphabetArray[alphabetArray.indexOf(letter) - 1]);
         }
-        <span class="missing-if-branch" title="if path not taken" >I</span>if (letter === "A") {
-<span class="cstat-no" title="statement not covered" >          result.push("Z");</span>
-        }
-        result.push(alphabetArray[alphabetArray.indexOf(letter) - 1]);
       } else <span class="missing-if-branch" title="else path not taken" >E</span>{
 <span class="cstat-no" title="statement not covered" >        result.push(letter);</span>
       }
@@ -214,7 +214,7 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Nov 21 2021 15:25:05 GMT+0300 (Moscow Standard Time)
+                at Sun Nov 21 2021 16:45:36 GMT+0300 (Moscow Standard Time)
             </div>
         </div>
         <script src="prettify.js"></script>

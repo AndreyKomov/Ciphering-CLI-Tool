@@ -42,7 +42,7 @@ module.exports.rot = (str, action) => {
                   } else if ( letterIndex > 25 && letterIndex < 34) {
                     result.push(alphabetArray[letterIndex + 18]);
                   } else {
-                    result.push(alphabetArray[alphabetArray.indexOf(letter) - 8]);
+                    result.push(alphabetArray[letterIndex - 8]);
                   }
             } else {
                 result.push(letter);
