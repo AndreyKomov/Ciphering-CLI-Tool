@@ -7,15 +7,26 @@ module.exports.rot = (str, action) => {
     let result = [];
 
     if (action === 1) {
-        strArray.map((letter) => {
+        strArray.forEach((letter) => {
+            let letterIndex = alphabetArray.indexOf(letter);
             if (alphabetArray.includes(letter)) {
-                if (17 > alphabetArray.indexOf(letter) && alphabetArray.indexOf(letter) < 26) {
-                    result.push(alphabetArray[(alphabetArray.indexOf(letter) + 7) - 25]);
+/*                 switch(letterIndex) {
+                    case (17 < letterIndex && letterIndex < 26):
+                        result.push(alphabetArray[(alphabetArray.indexOf(letter) + 7) - 25]);
+                        break;
+                    case 43 < letterIndex && letterIndex < 52:
+                        result.push(alphabetArray[(alphabetArray.indexOf(letter) + 7) - 51]);
+                        break;
+                    default:
+                        result.push(alphabetArray[alphabetArray.indexOf(letter) + 8]);
+                } */
+                if (17 < letterIndex && letterIndex < 26) {
+                    result.push(alphabetArray[(letterIndex + 7) - 25]);
+                  } else if (43 < letterIndex && letterIndex < 52) {
+                    result.push(alphabetArray[(letterIndex + 7) - 25]);
+                  } else {
+                    result.push(alphabetArray[letterIndex + 8]);
                   }
-                if (43 > alphabetArray.indexOf(letter) && alphabetArray.indexOf(letter) < 52) {
-                    result.push(alphabetArray[(alphabetArray.indexOf(letter) + 7) - 51]);
-                  }
-                result.push(alphabetArray[alphabetArray.indexOf(letter) + 8]);
             } else {
                 result.push(letter);
             }
@@ -23,15 +34,16 @@ module.exports.rot = (str, action) => {
     }
 
     if (action === 0) {
-        strArray.map((letter) => {
+        strArray.forEach((letter) => {
+            let letterIndex = alphabetArray.indexOf(letter);
             if (alphabetArray.includes(letter)) {
-                if (alphabetArray.indexOf(letter) < 8) {
-                    result.push(alphabetArray[alphabetArray.indexOf(letter) + 18]);
+                if (letterIndex < 8) {
+                    result.push(alphabetArray[letterIndex + 18]);
+                  } else if ( letterIndex > 25 && letterIndex < 34) {
+                    result.push(alphabetArray[letterIndex + 18]);
+                  } else {
+                    result.push(alphabetArray[alphabetArray.indexOf(letter) - 8]);
                   }
-                if ( alphabetArray.indexOf(letter) > 25 && alphabetArray.indexOf(letter) < 34) {
-                    result.push(alphabetArray[(alphabetArray.indexOf(letter) + 7) + 18]);
-                  }
-                result.push(alphabetArray[alphabetArray.indexOf(letter) - 8]);
             } else {
                 result.push(letter);
             }
